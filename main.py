@@ -33,4 +33,8 @@ for carpeta in carpetas:
 	sub_ruta=main_ruta+carpeta
 	archivos_2=os.listdir(sub_ruta)
 	busca_mkv(archivos_2, sub_ruta)
-	
+	for sub_carpeta in carpetas_2:
+		ruta_2=sub_ruta+"\\"+sub_carpeta
+		print(ruta_2)
+		archivos_3=os.listdir(ruta_2)
+		busca_mkv(archivos_3, ruta_2)
